@@ -1,0 +1,31 @@
+.chapter-sidebar {
+  width: 240px;
+  padding: 2rem;
+  margin-top: 15rem;
+  overflow-y: auto;
+}
+
+.chapter-sidebar h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.chapter-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chapter-sidebar li {
+  margin-bottom: 1rem;
+}
+
+.chapter-sidebar a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.chapter-sidebar a:hover {
+  color: #000;
+}

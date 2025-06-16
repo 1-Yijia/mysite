@@ -1,0 +1,17 @@
+/* ChapterPage.css */
+
+.chapter-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.chapter-content {
+  flex: 1;
+  padding: 3rem 5rem;
+  background-color: #fff;
+  color: #333;
+  overflow-y: auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}

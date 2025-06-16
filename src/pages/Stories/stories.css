@@ -1,0 +1,72 @@
+.stories-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+/* Sidebar on the left */
+.stories-sidebar {
+  flex: 0 0 180px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+  margin-top: 10rem;
+  position: sticky;
+  top: 4rem;
+}
+
+/* Centered grid block */
+.stories-grid-wrapper {
+  max-width: 960px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Grid inside fixed-width wrapper */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Card style */
+.chapter-card {
+  aspect-ratio: 1 / 1;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;   /* remove underline */
+  color: black;            /* set text color to black */
+}
+
+.chapter-card:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .stories-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stories-sidebar {
+    margin-bottom: 1.5rem;
+  }
+
+  .stories-grid-wrapper {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,42 @@
+.hamburger-container {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    z-index: 1000;
+}
+
+.hamburger-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    /* remove background */
+    border: none;
+    /* remove border */
+    padding: 0;
+    /* remove padding */
+    box-shadow: none;
+    /* remove shadow if any */
+}
+
+.dropdown-menu button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    text-align: left;
+    padding: 0.3rem 0;
+    transition: color 0.2s;
+}
+
+.dropdown-menu button:hover {
+    color: #888;
+    /* subtle hover effect */
+}
