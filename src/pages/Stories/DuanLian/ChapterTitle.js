@@ -1,3 +1,4 @@
+//Update here for new chapters addition
 import DuanlianChapter1 from './Chap_1';
 import DuanlianChapter2 from './Chap_2';
 import DuanlianChapter3 from './Chap_3';

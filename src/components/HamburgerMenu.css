@@ -1,8 +1,15 @@
 .hamburger-container {
-    position: absolute;
-    top: 5rem;
-    left: 2rem;
-    z-index: 1000;
+  position: relative; 
+  margin-top: 2rem; /* spacing from top */
+  z-index: 1000;
+}
+
+.hamburger-aligned {
+  padding-left: 6rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hamburger-icon {
@@ -16,13 +23,9 @@
     display: flex;
     flex-direction: column;
     background: none;
-    /* remove background */
     border: none;
-    /* remove border */
     padding: 0;
-    /* remove padding */
     box-shadow: none;
-    /* remove shadow if any */
 }
 
 .dropdown-menu button {

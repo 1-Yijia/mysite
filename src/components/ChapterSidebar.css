@@ -1,19 +1,33 @@
 .chapter-sidebar {
   width: 240px;
-  padding: 2rem;
-  margin-top: 15rem;
+  margin-top: 4rem;
+  overflow-y: auto;
+  position: sticky; /* <-- keep sidebar visible while scrolling on desktop */
+  left: 6rem; 
+  height: calc(100vh - 5rem); /* fill viewport height minus header */
+}
+
+.chapter-sidebar.minimal {
+  margin-right: 2rem;
+  flex: 0 0 180px;
+}
+
+.chapter-sidebar.full {
+  width: 240px;
   overflow-y: auto;
 }
 
-.chapter-sidebar h2 {
+.chapter-sidebar h3 {
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 600;
+  background: none;
 }
 
 .chapter-sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0; /* reset */
 }
 
 .chapter-sidebar li {
@@ -28,4 +42,38 @@
 
 .chapter-sidebar a:hover {
   color: #000;
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 768px) {
+  .chapter-sidebar {
+    width: 100%;
+    margin-top: 1.5rem;
+    overflow-y: visible;
+    position: static; /* no sticky on mobile */
+    height: auto; /* reset height */
+    padding: 0 1rem; /* horizontal padding only */
+  }
+
+  .chapter-sidebar h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.25rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #111; /* more subtle */
+  }
+
+  .chapter-sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* ✅ align to left */
+    gap: 8px;
+  }
+
+  .chapter-sidebar li {
+    margin: 0;
+  }
 }

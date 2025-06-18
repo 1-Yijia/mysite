@@ -14,12 +14,14 @@ export default function Chapters() {
   }
 
   return (
-    <div className="chapter-page">
-      <ChapterSidebar chapterId={chapterId} />
-      <div className="chapter-content">
-        <Suspense fallback={<div>加载中...</div>}>
-          <ChapterComponent />
-        </Suspense>
+    <div className="container">
+      <div className="chapter-page">
+        <ChapterSidebar chapterId={chapterId} />
+        <div className="chapter-content">
+          <Suspense fallback={<div>加载中...</div>}>
+            <ChapterComponent />
+          </Suspense>
+        </div>
       </div>
     </div>
   );

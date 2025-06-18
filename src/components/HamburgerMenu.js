@@ -17,7 +17,10 @@ export default function HamburgerMenu() {
     <div className="hamburger-container">
       <FaBars
         className="hamburger-icon"
-        onClick={() => setIsOpen(!isOpen)} // ❌ remove redirect to "/"
+        onClick={() => {
+          console.log("Hamburger clicked");
+          setIsOpen(!isOpen);
+        }}
       />
 
       {isOpen && (

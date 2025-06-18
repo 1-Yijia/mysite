@@ -17,11 +17,12 @@
 }
 .catalog-bar {
   position: absolute;
-  bottom: 100px;
-  width: 100%;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
   gap: 2rem;
+  font-size: 1.8rem;
 }
 .catalog-bar button {
   background: transparent;
@@ -33,4 +34,32 @@
 }
 .catalog-bar button:hover {
   background: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .catalog-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .catalog-bar button {
+    width: 80vw;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
+.catalog-bar button {
+  background: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.catalog-bar button:hover {
+  background-color: #eee;
 }
