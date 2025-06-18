@@ -1,3 +1,24 @@
+/* Arrange home and hamburger horizontally */
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* spacing between icons */
+}
+
+.home-text-link {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: black;
+  transition: color 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.home-text-link:hover {
+  color: #888;
+}
+
 .hamburger-container {
   position: relative; 
   margin-top: 2rem; /* spacing from top */
@@ -13,7 +34,7 @@
 }
 
 .hamburger-icon {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: black;
 }

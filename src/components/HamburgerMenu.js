@@ -1,22 +1,30 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
 import "./HamburgerMenu.css";
 
-export default function HamburgerMenu( { isOpen, setIsOpen } ) {
+export default function HamburgerMenu({ isOpen, setIsOpen }) {
   const navigate = useNavigate();
 
   const handleNavigate = (path) => {
-  navigate(path);
-  setIsOpen(false); // Collapse the menu after navigation
-};
+    navigate(path);
+    setIsOpen(false); // Collapse the menu after navigation
+  };
 
   return (
     <div className="hamburger-container">
-      <FaBars
-        className="hamburger-icon"
-        onClick={() => setIsOpen((prev) => !prev)}
-      />
+      <div className="icon-row">
+        <RxHamburgerMenu
+          className="hamburger-icon"
+          onClick={() => setIsOpen((prev) => !prev)}
+        />
+        <span
+          className="home-text-link"
+          onClick={() => navigate("/")}
+        >
+          HOME
+        </span>
+      </div>
 
       {isOpen && (
         <div className="dropdown-menu">
