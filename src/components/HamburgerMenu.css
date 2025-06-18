@@ -64,3 +64,14 @@
     color: #888;
     /* subtle hover effect */
 }
+
+/* ✅ Mobile-only tweaks */
+@media (max-width: 768px) {
+.hamburger-aligned {
+  padding-left: 4rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+}
