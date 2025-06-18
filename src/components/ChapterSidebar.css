@@ -3,15 +3,18 @@
   transition: width 0.3s ease, opacity 0.3s ease;
   margin-top: 4rem;
   overflow: hidden;
-  position: sticky; /* <-- keep sidebar visible while scrolling on desktop */
-  left: 6rem; 
-  height: calc(100vh - 5rem); /* fill viewport height minus header */
+  position: sticky;
+  /* <-- keep sidebar visible while scrolling on desktop */
+  left: 6rem;
+  height: calc(100vh - 5rem);
+  /* fill viewport height minus header */
 }
 
 .chapter-sidebar.collapsed {
   width: 0;
   opacity: 0;
-  pointer-events: none; /* disables interaction */
+  pointer-events: none;
+  /* disables interaction */
 }
 
 .chapter-sidebar.minimal {
@@ -34,7 +37,8 @@
 .chapter-sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 0; /* reset */
+  margin: 0;
+  /* reset */
 }
 
 .chapter-sidebar li {
@@ -57,15 +61,29 @@
     width: 100%;
     margin-top: 1.5rem;
     overflow-y: visible;
-    position: static; /* no sticky on mobile */
-    height: auto; /* reset height */
-    padding: 0 1rem; /* horizontal padding only */
+    position: static;
+    /* no sticky on mobile */
+    height: auto;
+    /* reset height */
+    padding: 0 1rem;
+    /* horizontal padding only */
+    transition: opacity 0.3s ease;
   }
 
   .chapter-sidebar.minimal {
-  margin-right: 2rem;
-  /* flex: 0 0 180px; */
-}
+    margin-right: 0rem;
+    flex: none;
+    height: auto;
+  }
+
+  .chapter-sidebar.collapsed {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    height: auto;
+    width: 100%;
+    transition: opacity 0.3s ease;
+  }
 
   .chapter-sidebar h3 {
     font-size: 1rem;
@@ -75,13 +93,15 @@
     padding-left: 0.25rem;
     font-weight: 500;
     letter-spacing: 0.05em;
-    color: #111; /* more subtle */
+    color: #111;
+    /* more subtle */
   }
 
   .chapter-sidebar ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* ✅ align to left */
+    justify-content: flex-start;
+    /* ✅ align to left */
     gap: 8px;
   }
 
