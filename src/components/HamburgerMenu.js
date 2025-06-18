@@ -1,33 +1,28 @@
-// src/components/HamburgerMenu.js
-import React, { useState } from "react";
+import React from "react";
 import { FaBars } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "./HamburgerMenu.css";
 
-export default function HamburgerMenu() {
-  const [isOpen, setIsOpen] = useState(false);
+export default function HamburgerMenu( { isOpen, setIsOpen } ) {
   const navigate = useNavigate();
 
   const handleNavigate = (path) => {
-    navigate(path);
-    setIsOpen(false); // collapse after clicking a link
-  };
+  navigate(path);
+  setIsOpen(false); // Collapse the menu after navigation
+};
 
   return (
     <div className="hamburger-container">
       <FaBars
         className="hamburger-icon"
-        onClick={() => {
-          console.log("Hamburger clicked");
-          setIsOpen(!isOpen);
-        }}
+        onClick={() => setIsOpen((prev) => !prev)}
       />
 
       {isOpen && (
         <div className="dropdown-menu">
-          <button onClick={() => handleNavigate("/stories")}>STORIES</button>
-          <button onClick={() => handleNavigate("/light&shadow")}>LIGHT & SHADOW</button>
-          <button onClick={() => handleNavigate("/journeys")}>JOURNEYS</button>
+          <button onClick={() => handleNavigate("/stories")}>故事</button>
+          <button onClick={() => handleNavigate("/light&shadow")}>光影</button>
+          <button onClick={() => handleNavigate("/journeys")}>旅程</button>
         </div>
       )}
     </div>

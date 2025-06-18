@@ -10,9 +10,9 @@ function Home() {
             <div className="hero-container">
                 <img src="/images/hero.jpeg" alt="hero" className="hero-image" />
                 <div className="catalog-bar">
-                    <button onClick={() => navigate("/stories")}>STORIES</button>
-                    <button onClick={() => navigate("/light&shadow")}>LIGHT&SHADOW</button>
-                    <button onClick={() => navigate("/journeys")}>JOURNEYS</button>
+                    <button onClick={() => navigate("/stories")}>故事</button>
+                    <button onClick={() => navigate("/light&shadow")}>光影</button>
+                    <button onClick={() => navigate("/journeys")}>旅程</button>
                 </div>
             </div>
         </div>

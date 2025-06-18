@@ -1,9 +1,11 @@
+import React, { useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import HamburgerMenu from "./components/HamburgerMenu";
 import Footer from "./components/Footer";
 import './App.css';
 
 export default function Layout() {
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const location = useLocation();
   const showMenu = location.pathname !== "/";
 
@@ -11,10 +13,12 @@ export default function Layout() {
     <>
       {showMenu && (
         <div className="hamburger-aligned">
-          <HamburgerMenu />
+          <HamburgerMenu 
+          isOpen={isHamburgerOpen}
+          setIsOpen={setIsHamburgerOpen}/>
         </div>
       )}
-      <Outlet />  {/* Routed pages insert their own container if needed */}
+      <Outlet context={{ isHamburgerOpen }}/> 
       <Footer />
     </>
   );

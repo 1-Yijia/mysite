@@ -1,10 +1,17 @@
 .chapter-sidebar {
   width: 240px;
+  transition: width 0.3s ease, opacity 0.3s ease;
   margin-top: 4rem;
-  overflow-y: auto;
+  overflow: hidden;
   position: sticky; /* <-- keep sidebar visible while scrolling on desktop */
   left: 6rem; 
   height: calc(100vh - 5rem); /* fill viewport height minus header */
+}
+
+.chapter-sidebar.collapsed {
+  width: 0;
+  opacity: 0;
+  pointer-events: none; /* disables interaction */
 }
 
 .chapter-sidebar.minimal {
