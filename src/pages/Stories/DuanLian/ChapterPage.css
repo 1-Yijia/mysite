@@ -3,7 +3,8 @@
 .chapter-page {
   display: flex;
   flex-direction: row;
-  max-width: 1200px; /* ✅ SAME */
+  max-width: 1200px;
+  /* ✅ SAME */
   margin: 0 auto;
   padding: 0 2rem;
   min-height: 100vh;
@@ -18,14 +19,15 @@
   line-height: 1.8;
 }
 
-
 /* ✅ Mobile styles */
 @media (max-width: 768px) {
   .chapter-page {
     flex-direction: column;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
   }
 
   .chapter-content {
-    padding: 15px;
+    padding: 0;
   }
 }
