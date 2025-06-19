@@ -27,7 +27,7 @@
 
 .hamburger-aligned {
   padding-left: 6rem;
-  padding-right: 2rem;
+  padding-right: 6rem;
   padding-top: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -68,7 +68,7 @@
 /* ✅ Mobile-only tweaks */
 @media (max-width: 768px) {
 .hamburger-aligned {
-  padding-left: 4rem;
+  padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
   max-width: 1200px;
