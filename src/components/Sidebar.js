@@ -1,15 +1,20 @@
+// src/components/Sidebar.js
 import { useState, useEffect, useRef } from "react";
-import './ChapterSidebar.css';
-import { Link } from "react-router-dom";
-import { chapterTitles } from "../pages/Stories/DuanLian/ChapterTitle";
-import { useOutletContext } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
+import "./Sidebar.css";
 
-export default function ChapterSidebar({ chapterId, variant = "full"}) {
+
+export default function Sidebar({ variant = "full",
+  title = "",
+  links = [],
+  currentId = null,
+  basePath = "",
+}) {
   const { isHamburgerOpen } = useOutletContext();
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const sidebarRef = useRef(null);
 
-  // Close mobile dropdown when clicking outside
+  // Click outside to close dropdown
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
@@ -27,27 +32,27 @@ export default function ChapterSidebar({ chapterId, variant = "full"}) {
   return (
     <div
       ref={sidebarRef}
-      className={`chapter-sidebar ${variant} ${
-        isHamburgerOpen ? "collapsed" : ""
-      } ${isMobileDropdownOpen ? "mobile-expanded" : "mobile-collapsed"}`}
+      className={`chapter-sidebar ${variant} ${isHamburgerOpen ? "collapsed" : ""
+        } ${isMobileDropdownOpen ? "mobile-expanded" : "mobile-collapsed"}`}
     >
-      <h3 onClick={handleTitleClick} className="chapter-sidebar-title">断链</h3>
+      <h3 onClick={handleTitleClick} className="chapter-sidebar-title">{title}</h3>
 
-      {/* ✅ Only show the list when in full mode + not collapsed + dropdown open */}
       {variant === "full" && !isHamburgerOpen && isMobileDropdownOpen && (
         <ul className="chapter-sidebar-list">
-          {chapterTitles.map(({ number, title }) => (
+          {links.map(({ id, name }) => (
             <li
-              key={number}
-              className={chapterId === String(number) ? "active" : ""}
+              key={id}
+              className={currentId === String(id) ? "active" : ""}
             >
-              <Link to={`/stories/DuanLian/${number}`} onClick={handleLinkClick}>
-                {title}
+              <Link to={`${basePath}/${id}`} onClick={handleLinkClick}>
+                {name}
               </Link>
             </li>
           ))}
         </ul>
       )}
+
+
     </div>
   );
 }

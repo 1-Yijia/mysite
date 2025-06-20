@@ -1,17 +1,27 @@
 import React from "react";
 import "./stories.css";
 import { chapterTitles } from './DuanLian/ChapterTitle';
-import ChapterSidebar from "../../components/ChapterSidebar";
-import { useOutletContext } from "react-router-dom";
+import Sidebar from "../../components/Sidebar";
 import { Link } from "react-router-dom";
 
 export default function Stories() {
-  const { isSidebarOpen } = useOutletContext();
+  const links = chapterTitles.map(({ number, title }) => ({
+    id: number,
+    name: title,
+  }));
 
   return (
     <div className="container">
       <div className="stories-container">
-        <ChapterSidebar variant="minimal" className={isSidebarOpen ? "" : "collapsed"}/>
+
+        <Sidebar
+          variant="minimal"
+          title="断链"
+          links={links}
+          currentId={null}
+          basePath="/stories/DuanLian"
+        />
+
         <div className="stories-grid-wrapper">
           <div className="stories-grid">
             {chapterTitles.map(({ number, title }) => (
