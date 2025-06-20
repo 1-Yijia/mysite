@@ -8,6 +8,7 @@ export default function Layout() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const location = useLocation();
   const showMenu = location.pathname !== "/";
+  const isHome = location.pathname === "/";
 
   return (
     <>
@@ -19,7 +20,9 @@ export default function Layout() {
         </div>
       )}
       <Outlet context={{ isHamburgerOpen }}/> 
-      <Footer />
+      <div className={isHome ? "footer-overlay" : ""}>
+        <Footer />
+      </div>
     </>
   );
 }

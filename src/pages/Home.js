@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import HeroCarousel from "../components/HeroCarousel";
+import "../components/HeroCarousel.css";
 import "./Home.css";
 
 function Home() {
@@ -8,11 +10,11 @@ function Home() {
     return (
         <div className="home-container">
             <div className="hero-container">
-                <img src="/images/hero.jpeg" alt="hero" className="hero-image" />
+                <HeroCarousel />
                 <div className="catalog-bar">
                     <button onClick={() => navigate("/stories")}>故事</button>
-                    <button onClick={() => navigate("/light&shadow")}>光影</button>
                     <button onClick={() => navigate("/journeys")}>旅程</button>
+                    <button onClick={() => navigate("/light&shadow")}>关于</button>
                 </div>
             </div>
         </div>

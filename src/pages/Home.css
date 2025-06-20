@@ -4,19 +4,31 @@
   overflow: hidden;
   position: relative;
 }
-.hero-container {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+ .hero-carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-.hero-image {
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+}
+.carousel-image.active {
+  opacity: 1;
 }
 .catalog-bar {
   position: absolute;
+  z-index: 2;
   bottom: 5vh;
   left: 50%;
   transform: translateX(-50%);
@@ -29,11 +41,15 @@
   border: none;
   padding: 0.75rem 1.5rem;
   font-size: 1.2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 600;             
   cursor: pointer;
-  transition: background 0.3s ease;
+  color: white;
+  transition: color 0.3s ease;
 }
 .catalog-bar button:hover {
-  background: rgba(255, 255, 255, 0.2);
+  color: black;              
+  background: none;          
 }
 
 /* Mobile layout */
@@ -45,7 +61,7 @@
     font-size: 1.2rem;
   }
 
-  .catalog-bar button {
+  /* .catalog-bar button {
     width: 80vw;
     padding: 1rem;
     font-size: 1.1rem;
@@ -59,7 +75,17 @@
   font-weight: 300;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-}
+  color: #111;
+} */
+.catalog-bar button {
+    width: 80vw;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;            
+    color: white;               
+  }
 .catalog-bar button:hover {
-  background-color: #eee;
+  color: black;              
+  background: none; 
+}
 }

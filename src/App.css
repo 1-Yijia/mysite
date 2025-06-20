@@ -6,6 +6,13 @@
   position: relative; 
 }
 
+.footer-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2; /* Above the carousel background */
+}
+
 .App {
   text-align: center;
 }
