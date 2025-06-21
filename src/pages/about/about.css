@@ -1,0 +1,22 @@
+.about-content {
+  font-family: 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #222;
+  max-width: 720px;
+  padding: 4rem 2rem;
+  white-space: pre-line;
+}
+
+.about-content p {
+  margin: 0;
+}
+
+.about-content p + p {
+  margin-top: 0.4rem;
+}
+
+.about-content p:empty {
+  display: block;
+  margin-top: 1.8rem;
+}
