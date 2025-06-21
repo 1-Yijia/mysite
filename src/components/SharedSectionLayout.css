@@ -1,0 +1,33 @@
+/* SharedSectionLayout.css */
+
+.shared-section-layout {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Right content area */
+.shared-section-content {
+  flex: 1;
+  padding: 4rem 0;
+  color: #333;
+  overflow-y: auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* ✅ Mobile styles */
+@media (max-width: 768px) {
+  .shared-section-layout {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .shared-section-content {
+    padding: 1rem;
+  }
+}

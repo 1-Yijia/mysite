@@ -61,22 +61,6 @@
     font-size: 1.2rem;
   }
 
-  /* .catalog-bar button {
-    width: 80vw;
-    padding: 1rem;
-    font-size: 1.1rem;
-  }
-}
-.catalog-bar button {
-  background: none;
-  border: none;
-  padding: 1rem 2rem;
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: 300;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  color: #111;
-} */
 .catalog-bar button {
     width: 80vw;
     padding: 1rem;

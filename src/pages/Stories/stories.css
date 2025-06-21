@@ -1,44 +1,23 @@
-.stories-container {
-  display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0;
-  /* justify-content: center; */
-  align-items: flex-start;
-  min-height: 100vh;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
-}
-
 .stories-grid-wrapper {
-  margin-top: 6rem;
   max-width: 960px;
   flex-grow: 1;
 }
 
-/* Grid inside fixed-width wrapper */
 .stories-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem 1rem;
-  /* vertical 2rem, horizontal 1rem */
   justify-items: center;
   box-sizing: border-box;
 }
 
 .chapter-card {
   display: flex;
-  /* change from block to flex */
   align-items: center;
-  /* vertical center */
   justify-content: center;
-  /* horizontal center */
   width: 220px;
-  /* fixed width */
   height: 120px;
-  /* fixed height - adjust as needed */
   padding: 1rem;
-  /* you can remove side padding since width is fixed */
   margin: 0 auto;
   text-align: center;
   font-size: 0.95rem;
@@ -48,7 +27,6 @@
   border: 1px solid #e0e0e0;
   transition: background 0.2s ease;
   box-sizing: border-box;
-  /* important to include padding in width/height */
 }
 
 .chapter-card:hover {
@@ -58,11 +36,6 @@
 
 /* ✅ Mobile-only tweaks */
 @media (max-width: 768px) {
-  .stories-container {
-    flex-direction: column;
-    padding: 0;
-  }
-
   .chapter-sidebar {
     margin-bottom: 1rem;
   }

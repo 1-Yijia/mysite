@@ -1,0 +1,35 @@
+mysite/
+├── public/
+│   └── images/
+│       ├── 1.jpg
+│       ├── ...
+│       └── 13.jpg
+├── src/
+│   ├── components/
+│   │   ├── HamburgerMenu.js
+│   │   ├── HeroCarousel.js
+│   │   ├── Sidebar.js      
+│   │   ├── Footer.js
+│   │   └── SharedSectionLayout.js 
+│   ├── pages/
+│   │   ├── Home.js <- Home page where the hero carousel is 
+│   │   ├── about/
+│   │   │   ├── AboutPage.js
+│   │   │   └── about-1.js
+│   │   ├── journeys/
+│   │   │   ├── JourneysPage.js
+│   │   │   └── journey-1.js
+│   │   └── stories/
+│   │       ├── Stories.js <- Chapter grid display here 
+│   │       ├── Stories.css
+│   │       └── DuanLian/
+│   │           ├── ChapterTitle.js
+│   │           ├── ChapterPage.js <- Chapter content display here 
+│   │           └── chapter-1.js
+│   │           └── chapter-2.js
+│   │           └── chapter-.....js
+│   ├── Layout.js
+│   ├── App.js
+│   ├── index.js
+│   ├── App.css
+│   └── index.css
