@@ -30,7 +30,7 @@
   padding-right: 4rem;
   padding-top: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .hamburger-icon {
@@ -68,10 +68,8 @@
 /* ✅ Mobile-only tweaks */
 @media (max-width: 768px) {
 .hamburger-aligned {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 2rem;
+  padding: 0;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0
 }
 }

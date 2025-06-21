@@ -1,6 +1,6 @@
-// src/components/Sidebar.js
-import { useState, useEffect, useRef } from "react";
-import { Link, useOutletContext } from "react-router-dom";
+import { useState, useEffect, useRef, useContext } from "react";
+import { SidebarContext } from "./SharedSectionLayout";
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
 
@@ -10,7 +10,7 @@ export default function Sidebar({ variant = "full",
   currentId = null,
   basePath = "",
 }) {
-  const { isHamburgerOpen } = useOutletContext();
+  const { isHamburgerOpen } = useContext(SidebarContext);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const sidebarRef = useRef(null);
 

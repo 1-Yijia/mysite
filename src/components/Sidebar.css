@@ -1,5 +1,7 @@
 .chapter-sidebar {
   width: 200px;
+  padding-left: 4rem;
+  padding-right: 4rem;
   transition: width 0.3s ease, opacity 0.3s ease;
   margin-top: 4rem;
   overflow: hidden;
@@ -69,6 +71,7 @@
 @media (max-width: 768px) {
   .chapter-sidebar {
     position: fixed;
+    padding: 0;
     top: 0;
     left: 0;
     z-index: 999;

@@ -10,6 +10,12 @@
   padding: 0;
 }
 
+.shared-section-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /* Right content area */
 .shared-section-content {
   flex: 1;
@@ -25,9 +31,17 @@
   .shared-section-layout {
     flex-direction: column;
     padding: 0;
+    height: auto;    
+    min-height: auto;
+    overflow: visible;
+  }
+
+  .shared-section-left {
+    flex-direction: column;
   }
 
   .shared-section-content {
-    padding: 1rem;
+    padding: 0;
+    overflow-y: visible;
   }
 }
