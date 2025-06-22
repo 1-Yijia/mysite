@@ -1,6 +1,6 @@
 import React from "react";
 import "./stories.css";
-import { chapterTitles } from './DuanLian/ChapterTitle';
+import { chapterTitles } from './DuanLian/ChapterConfig';
 import Sidebar from "../../components/Sidebar";
 import SharedSectionLayout from "../../components/SharedSectionLayout";
 import { Link } from "react-router-dom";

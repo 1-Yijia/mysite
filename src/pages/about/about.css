@@ -20,3 +20,11 @@
   display: block;
   margin-top: 1.8rem;
 }
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0;
+    overflow-y: visible;
+    font-size: 0.8rem;
+  }
+}

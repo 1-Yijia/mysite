@@ -4,7 +4,8 @@ import Layout from "./Layout";
 import Home from "./pages/Home";
 import Stories from "./pages/Stories/stories";
 import About from "./pages/about/about";
-import Journeys from "./pages/journeys/journeys";
+import JourneyCover from "./pages/journeys/JourneyCover";
+import JourneyPage from "./pages/journeys/JourneyPage";
 import Chapters from "./pages/Stories/DuanLian/ChapterPage";
 import './App.css';
 
@@ -14,9 +15,10 @@ function App() {
       {/* Layout wraps all routes */}
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="stories" element={<Stories />} />
         <Route path="about" element={<About />} />
-        <Route path="journeys" element={<Journeys />} />
+        <Route path="journeys" element={<JourneyCover />} />
+        <Route path="journeys/:journeyId" element={<JourneyPage />} />
+        <Route path="stories" element={<Stories />} />
         <Route path="stories/DuanLian/:chapterId" element={<Chapters />} />
       </Route>
     </Routes>

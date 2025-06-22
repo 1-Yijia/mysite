@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Sidebar from "../../../components/Sidebar";
 import SharedSectionLayout from "../../../components/SharedSectionLayout";
 import './ChapterPage.css';
-import { chapterMap, chapterTitles }  from './ChapterTitle';
+import { chapterMap, chapterTitles }  from './ChapterConfig';
 
 export default function Chapters() {
   const { chapterId } = useParams();
