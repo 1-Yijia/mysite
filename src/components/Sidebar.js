@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
 
-export default function Sidebar({ variant = "full",
+export default function Sidebar({ 
+  variant = "full",
   title = "",
   links = [],
   currentId = null,
   basePath = "",
+  alwaysExpanded = false,
 }) {
   const { isHamburgerOpen } = useContext(SidebarContext);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
@@ -29,6 +31,10 @@ export default function Sidebar({ variant = "full",
 
   const handleLinkClick = () => setIsMobileDropdownOpen(false);
 
+  const shouldShowList =
+  alwaysExpanded ||
+  (variant === "full" && !isHamburgerOpen && isMobileDropdownOpen);
+
   return (
     <div
       ref={sidebarRef}
@@ -37,7 +43,7 @@ export default function Sidebar({ variant = "full",
     >
       <h3 onClick={handleTitleClick} className="chapter-sidebar-title">{title}</h3>
 
-      {variant === "full" && !isHamburgerOpen && isMobileDropdownOpen && (
+      {shouldShowList && (
         <ul className="chapter-sidebar-list">
           {links.map(({ id, name }) => (
             <li

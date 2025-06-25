@@ -22,9 +22,6 @@ export default function Journey2_Scotland() {
                 <img src="/images/scotland_3.jpg" alt="苏格兰高地" className="journey-photo" />
                 <figcaption>苏格兰高地</figcaption>
             </figure>
-            <p>
-                我带着被风缠乱的头发离开，胸中多了一份安静。
-            </p>
             <p></p>
         </div>
     );

@@ -15,7 +15,13 @@ mysite/
 │   │   ├── Home.js <- Home page where the hero carousel is 
 │   │   ├── about/
 │   │   │   ├── AboutPage.js
-│   │   │   └── about-1.js
+│   │   │   └── AboutConfig.js
+│   │   │   └── SelfIntro.js
+│   │   │   └── AboutSite.js
+│   │   │   ├──Architecture/
+│   │   │   │    └── Architecturalroject1.js
+│   │   │   │    └── Architecturalroject2.js
+│   │   │   │    └── ....
 │   │   ├── journeys/
 │   │   │   ├── JourneysPage.js
 │   │   │   └── journey-1.js

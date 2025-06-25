@@ -29,7 +29,7 @@ export default function HamburgerMenu({ isOpen, setIsOpen }) {
       {isOpen && (
         <div className="dropdown-menu">
           <button onClick={() => handleNavigate("/stories")}>故事</button>
-          <button onClick={() => handleNavigate("/about")}>关于</button>
+          <button onClick={() => handleNavigate("/about/self")}>关于</button>
           <button onClick={() => handleNavigate("/journeys")}>旅程</button>
         </div>
       )}

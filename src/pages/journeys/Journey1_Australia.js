@@ -22,9 +22,6 @@ export default function Journey1_Australia() {
                 <img src="/images/australia_1.jpg" className="journey-photo" />
                 <figcaption>大洋路旁随照</figcaption>
             </figure>
-            <p>
-                在澳大利亚的广袤中，我发现了世界的宁静，也听见了自己内心曾经的喧嚣。
-            </p>
             <p></p>
         </div>
     );

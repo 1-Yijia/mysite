@@ -14,7 +14,7 @@ function Home() {
                 <div className="catalog-bar">
                     <button onClick={() => navigate("/stories")}>故事</button>
                     <button onClick={() => navigate("/journeys")}>旅程</button>
-                    <button onClick={() => navigate("/about")}>关于</button>
+                    <button onClick={() => navigate("/about/self")}>关于</button>
                 </div>
             </div>
         </div>
