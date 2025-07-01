@@ -1,24 +1,32 @@
-.stories-grid-wrapper {
+/* SectionCover.css */
+
+.section-grid-wrapper {
+  margin-top: 6rem;
   max-width: 960px;
+  width: 100%;
   flex-grow: 1;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
-.stories-grid {
+.section-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem 1rem;
   justify-items: center;
   box-sizing: border-box;
+  width: 100%;
 }
 
-.chapter-card {
+.section-card {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 220px;
   height: 120px;
   padding: 1rem;
-  margin: 0 auto;
   text-align: center;
   font-size: 0.95rem;
   color: #333;
@@ -29,39 +37,27 @@
   box-sizing: border-box;
 }
 
-.chapter-card:hover {
+.section-card:hover {
   background-color: #000;
   color: #fff;
 }
 
-/* ✅ Mobile-only tweaks */
+/* Mobile */
 @media (max-width: 768px) {
-  .chapter-sidebar {
-    margin-bottom: 1rem;
-  }
-
-  .stories-grid-wrapper {
-    max-width: 960px;
-    width: 100%;
+  .section-grid-wrapper {
     padding: 0;
-    margin: 0 auto;
-    box-sizing: border-box;
+    margin-top: 3rem;
   }
 
-  .stories-grid {
-    display: grid;
+  .section-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
   }
 
-  .chapter-card {
+  .section-card {
     width: 100%;
     height: auto;
     font-size: 0.85rem;
     padding: 0.8rem;
-    box-sizing: border-box;
   }
 }

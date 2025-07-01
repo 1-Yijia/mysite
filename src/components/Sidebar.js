@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useContext } from "react";
 import { SidebarContext } from "./SharedSectionLayout";
 import { Link } from "react-router-dom";
-import "./Sidebar.css";
+import "../styles/Sidebar.css";
 
 
 export default function Sidebar({ 

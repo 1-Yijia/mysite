@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./HeroCarousel.css"; 
+import "../styles/HeroCarousel.css";
 
 const images = Array.from({ length: 13 }, (_, i) => `/images/${i + 1}.jpg`);
 

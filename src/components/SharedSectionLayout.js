@@ -1,6 +1,6 @@
 import React, { useState, createContext } from "react";
 import HamburgerMenu from "./HamburgerMenu";
-import "./SharedSectionLayout.css";
+import "../styles/SharedSectionLayout.css";
 
 // Create context in case child components need it
 export const SidebarContext = createContext();

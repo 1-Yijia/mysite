@@ -1,7 +1,7 @@
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
-import "./HamburgerMenu.css";
+import "../styles/HamburgerMenu.css";
 
 export default function HamburgerMenu({ isOpen, setIsOpen }) {
   const navigate = useNavigate();

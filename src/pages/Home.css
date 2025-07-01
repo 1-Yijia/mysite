@@ -4,28 +4,6 @@
   overflow: hidden;
   position: relative;
 }
- .hero-carousel {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-.carousel-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 1;
-}
-.carousel-image.active {
-  opacity: 1;
-}
 .catalog-bar {
   position: absolute;
   z-index: 2;
