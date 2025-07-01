@@ -1,0 +1,34 @@
+.model-photo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.3rem;
+  box-sizing: border-box;
+}
+
+.model-photo-item {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.model-photo-item:hover {
+  opacity: 0.8;
+}
+
+.model-photo-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+}
+
+.model-photo-title {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}

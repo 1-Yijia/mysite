@@ -3,9 +3,9 @@ import { useParams } from "react-router-dom";
 import SharedSectionLayout from "../../components/SharedSectionLayout";
 import Sidebar from "../../components/Sidebar";
 import { aboutMap, aboutList } from "./AboutConfig";
-import "./AboutPage.css";
+import "./AboutPage.css"; 
 
-export default function AboutPage() {
+export default function AboutSectionPage() {
   const { sectionId } = useParams();
   const SectionComponent = aboutMap[sectionId];
 
