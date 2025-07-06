@@ -1,10 +1,9 @@
 // src/pages/about/SelfIntro.js
 import React from "react";
-import "./AboutPage.css";
 
 export default function SelfIntro() {
   return (
-    <div className="about-content">
+    <div>
       <p>
         <strong>人们常说，工作会定义一个人。</strong><br />
         我曾是<br />

@@ -1,34 +1,15 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import SharedSectionLayout from "../../components/SharedSectionLayout";
-import Sidebar from "../../components/Sidebar";
+import SectionPage from "../../components/SectionPage";
 import { aboutMap, aboutList } from "./AboutConfig";
-import "./AboutPage.css"; 
 
 export default function AboutSectionPage() {
-  const { sectionId } = useParams();
-  const SectionComponent = aboutMap[sectionId];
-
-  if (!SectionComponent) {
-    return <div>内容不存在</div>;
-  }
-
   return (
-    <SharedSectionLayout
-      sidebar={
-        <Sidebar
-          variant="full"
-          title="关于"
-          links={aboutList}
-          currentId={sectionId}
-          basePath="/about"
-          alwaysExpanded={true}
-        />
-      }
-    >
-      <div className="about-content">
-        <SectionComponent />
-      </div>
-    </SharedSectionLayout>
+    <SectionPage
+      componentMap={aboutMap}
+      linkList={aboutList}
+      basePath="/about"
+      sidebarTitle="关于"
+      idParam="sectionId" 
+    />
   );
 }

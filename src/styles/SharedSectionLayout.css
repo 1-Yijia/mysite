@@ -41,7 +41,7 @@
   }
 
   .shared-section-content {
-    padding: 0;
+    padding-top: 1rem;
     overflow-y: visible;
   }
 }

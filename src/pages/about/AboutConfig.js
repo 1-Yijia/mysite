@@ -1,6 +1,6 @@
-import SelfIntro from './SelfIntro';
-import AboutSite from './AboutSite';
-import ModelPhoto from './ModelPhoto';
+import SelfIntro from './about_content/SelfIntro';
+import AboutSite from './about_content/AboutSite';
+import ModelPhoto from './about_content/ModelPhoto';
 
 export const aboutList = [
   { id: "self", name: "我的自述" },

@@ -1,6 +1,6 @@
 // Update here for new journeys
-import Journey1_Australia from './Journey1_Australia';
-import Journey2_Scotland from './Journey2_Scotland';
+import Journey1_Australia from './journey_content/Journey1_Australia';
+import Journey2_Scotland from './journey_content/Journey2_Scotland';
 // import Journey3_JapanAlps from './Journey3_JapanAlps';
 
 export const journeyList = [

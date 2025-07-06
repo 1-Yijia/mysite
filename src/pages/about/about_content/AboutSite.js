@@ -1,10 +1,9 @@
 // src/pages/about/AboutSite.js
 import React from "react";
-import "./AboutPage.css";
 
 export default function AboutSite() {
   return (
-    <div className="about-content">
+    <div>
       <p>
         <strong>这个网站，是我一边摸索、一边搭建的自留地。</strong><br />
         没有模板，没有 CMS，<br />

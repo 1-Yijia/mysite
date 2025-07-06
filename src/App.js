@@ -6,8 +6,8 @@ import StoryCover from "./pages/Stories/StoryCover";
 import AboutCover from "./pages/about/AboutCover";
 import AboutSectionPage from "./pages/about/AboutSectionPage";
 import JourneyCover from "./pages/journeys/JourneyCover";
-import JourneyPage from "./pages/journeys/JourneyPage";
-import Chapters from "./pages/Stories/DuanLian/ChapterPage";
+import JourneySectionPage from "./pages/journeys/JourneySectionPage";
+import ChapterSectionPage from "./pages/Stories/DuanLian/ChapterSectionPage";
 import './App.css';
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
         <Route path="/about" element={<AboutCover />} />
         <Route path="/about/:sectionId" element={<AboutSectionPage />} />
         <Route path="journeys" element={<JourneyCover />} />
-        <Route path="journeys/:journeyId" element={<JourneyPage />} />
+        <Route path="journeys/:journeyId" element={<JourneySectionPage />} />
         <Route path="stories" element={<StoryCover />} />
-        <Route path="stories/DuanLian/:chapterId" element={<Chapters />} />
+        <Route path="stories/DuanLian/:chapterId" element={<ChapterSectionPage />} />
       </Route>
     </Routes>
   );

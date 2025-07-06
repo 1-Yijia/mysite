@@ -1,0 +1,81 @@
+.section-content {
+  flex: 1;
+  padding: 4rem 0;
+  color: #333;
+  /* overflow-y: auto; */
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-family: 'Helvetica Neue', 'Segoe UI', Roboto, sans-serif;
+  max-width: 720px;
+  white-space: pre-line;
+}
+
+.section-content h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.section-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.4rem;
+  color: #444;
+}
+
+.section-content p + p {
+  margin-top: 0.4rem;
+}
+
+.section-content p:empty {
+  display: block;
+  margin-top: 2rem;
+}
+
+.section-content figure {
+  margin: 0;
+}
+
+.section-content figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.section-content img {
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .section-content {
+    padding: 0;
+    overflow-y: visible;
+    font-size: 0.9rem;
+  }
+
+  .section-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-content p {
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .section-content img {
+    width: 100%;
+  }
+
+  .section-content figcaption {
+    font-size: 0.6rem;
+    margin-top: 0.1rem;
+  }
+}

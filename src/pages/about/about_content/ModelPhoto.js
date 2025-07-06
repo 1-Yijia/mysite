@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { architectureList } from "./architecture/ArchitecturePage";
-import "./ModelPhoto.css";
+import "../../../styles/ModelPhoto.css";
 
 export default function ModelPhoto() {
   return (
