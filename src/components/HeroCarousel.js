@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/HeroCarousel.css";
 
-const images = Array.from({ length: 13 }, (_, i) => `/images/${i + 1}.jpg`);
+const images = Array.from({ length: 10 }, (_, i) => `/images/${i + 1}.jpg`);
 
 export default function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);

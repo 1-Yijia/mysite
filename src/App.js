@@ -8,6 +8,7 @@ import AboutSectionPage from "./pages/about/AboutSectionPage";
 import JourneyCover from "./pages/journeys/JourneyCover";
 import JourneySectionPage from "./pages/journeys/JourneySectionPage";
 import ChapterSectionPage from "./pages/Stories/DuanLian/ChapterSectionPage";
+import ArchitectureProjectPage from "./pages/about/about_content/architecture/ArchitecturePage";
 import './App.css';
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/about" element={<AboutCover />} />
         <Route path="/about/:sectionId" element={<AboutSectionPage />} />
+        <Route
+          path="/about/about_content/architecture/:id"
+          element={<ArchitectureProjectPage />}
+        />
         <Route path="journeys" element={<JourneyCover />} />
         <Route path="journeys/:journeyId" element={<JourneySectionPage />} />
         <Route path="stories" element={<StoryCover />} />

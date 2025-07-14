@@ -5,7 +5,7 @@ import ModelPhoto from './about_content/ModelPhoto';
 export const aboutList = [
   { id: "self", name: "我的自述" },
   { id: "site", name: "这个网站" },
-  { id: "model", name: "模型照片" },
+  { id: "model", name: "建筑项目" },
 ];
 
 export const aboutMap = {

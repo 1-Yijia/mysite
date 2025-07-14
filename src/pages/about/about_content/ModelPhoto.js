@@ -9,7 +9,7 @@ export default function ModelPhoto() {
       {architectureList.map((project) => (
         <Link
           key={project.id}
-          to={`/about/architecture/${project.id}`}
+          to={`/about/about_content/architecture/${project.id}`}
           className="model-photo-item"
         >
           <img src={project.image} alt={project.title} />
