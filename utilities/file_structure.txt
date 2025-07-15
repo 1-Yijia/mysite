@@ -33,8 +33,8 @@ mysite/
 │   │   │   └── journey-2.js
 │   │   │   └── journey-.....js
 │   │   └── stories/
-│   │       ├── Stories.js <- Display grid of chapters in DuanLian
-│   │       └── DuanLian/
+│   │       ├── Stories.js <- Display grid of chapters in Survivalist
+│   │       └── Survivalist/
 │   │           ├── ChapterConfig.js <- Chapter content managed here 
 │   │           ├── ChapterPage.js <- Base render page of each chapter 
 │   │           └── chapter-1.js

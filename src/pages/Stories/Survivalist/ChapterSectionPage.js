@@ -12,8 +12,8 @@ export default function ChapterSectionPage() {
     <SectionPage
       componentMap={chapterMap}
       linkList={links}
-      basePath="/stories/DuanLian"
-      sidebarTitle="断链"
+      basePath="/stories/Survivalist"
+      sidebarTitle="以生为证 Survivialist"
       idParam="chapterId"
       fallbackMessage="章节不存在"
     />

@@ -8,7 +8,7 @@ import "../styles/SectionCover.css";
  * Generic cover grid component for sections like stories, journeys, about.
  *
  * @param {Object} props
- * @param {string} props.sidebarTitle - optional sidebar title (e.g., "断链")
+ * @param {string} props.sidebarTitle 
  * @param {Array} props.items - array of { id, name }
  * @param {string} props.basePath - base path for sidebar link highlighting
  * @param {function} props.getLinkPath - function to generate link from item

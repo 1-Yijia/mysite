@@ -7,7 +7,7 @@ import AboutCover from "./pages/about/AboutCover";
 import AboutSectionPage from "./pages/about/AboutSectionPage";
 import JourneyCover from "./pages/journeys/JourneyCover";
 import JourneySectionPage from "./pages/journeys/JourneySectionPage";
-import ChapterSectionPage from "./pages/Stories/DuanLian/ChapterSectionPage";
+import ChapterSectionPage from "./pages/Stories/Survivalist/ChapterSectionPage";
 import ArchitectureProjectPage from "./pages/about/about_content/architecture/ArchitecturePage";
 import './App.css';
 
@@ -26,7 +26,7 @@ function App() {
         <Route path="journeys" element={<JourneyCover />} />
         <Route path="journeys/:journeyId" element={<JourneySectionPage />} />
         <Route path="stories" element={<StoryCover />} />
-        <Route path="stories/DuanLian/:chapterId" element={<ChapterSectionPage />} />
+        <Route path="stories/Survivalist/:chapterId" element={<ChapterSectionPage />} />
       </Route>
     </Routes>
   );
