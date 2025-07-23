@@ -17,14 +17,18 @@ mysite/
 │   │   │   ├── AboutConfig.js <- About section managed here 
 │   │   │   └── AboutCover.js <- Display grid of different sub sections in about
 │   │   │   ├── AboutSectionPage.js <- Base render page of each sub section 
-│   │   │   └── SelfIntro.js
-│   │   │   └── AboutSite.js
-│   │   │   └── ModelPhoto.js <- Display grid of architecture projects
-│   │   │   ├──Architecture/
-│   │   │   │    └── ArchitecturePage.js <- project lists managed here 
-│   │   │   │    └── Architecturalroject1.js
-│   │   │   │    └── Architecturalroject2.js
-│   │   │   │    └── ....
+│   │       └── about_content/
+│   │           ├── SelfIntro.js
+│   │           ├── AboutSite.js
+│   │           ├── ModelPhoto.js <- Display grid of architecture projects
+│   │           ├── architecture/
+│   │   │   │       └── ArchitecturePage.js <- project lists managed here 
+│   │   │   │       └── Project1.js
+│   │   │   │       └── Project2.js
+│   │   │   │       └── Project3.js
+│   │   │   │       └── Project4.js
+│   │   │   │       └── Project5.js
+│   │   │   │       └── Project6.js
 │   │   ├── journeys/
 │   │   │   ├── JourneyConfig.js <- journey list managed here 
 │   │   │   └── journeyCover.js <- Display grid of different journeys
