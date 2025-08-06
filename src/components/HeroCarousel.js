@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/HeroCarousel.css";
 
-
 const imageData = [
   { src: "/images/1.jpg", id: "project1" },
   { src: "/images/2.jpg", id: "project2" },
@@ -21,10 +20,20 @@ export default function HeroCarousel() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageData.length);
+      goToNextSlide();
     }, 4000);
     return () => clearInterval(interval);
   }, []);
+
+  const goToPreviousSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? imageData.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % imageData.length);
+  };
 
   return (
     <div className="hero-carousel">
@@ -41,6 +50,20 @@ export default function HeroCarousel() {
           />
         </Link>
       ))}
+
+      {/* Navigation Arrows */}
+      <button className="carousel-arrow left" onClick={goToPreviousSlide} aria-label="Previous Slide">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#888" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+
+      <button className="carousel-arrow right" onClick={goToNextSlide} aria-label="Next Slide">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#888" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="9 6 15 12 9 18" />
+        </svg>
+      </button>
+
     </div>
   );
 }

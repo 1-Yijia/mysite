@@ -32,3 +32,33 @@
   object-fit: cover;
   display: block;
 }
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);      
+  font-weight: 300;        
+  color: #888888;           
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  padding: 0.25rem 0.5rem;
+  user-select: none;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.carousel-arrow.left {
+  left: 1rem;
+}
+
+.carousel-arrow.right {
+  right: 1rem;
+}
+
+.carousel-arrow:hover {
+  color: #444444;
+}
+
+
