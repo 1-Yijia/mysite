@@ -9,7 +9,7 @@ import "../styles/SectionCover.css";
  *
  * @param {Object} props
  * @param {string} props.sidebarTitle 
- * @param {Array} props.items - array of { id, name }
+ * @param {Array} props.items - array of { id, displayName }
  * @param {string} props.basePath - base path for sidebar link highlighting
  * @param {function} props.getLinkPath - function to generate link from item
  */
@@ -19,9 +19,9 @@ export default function SectionCover({
   basePath,
   getLinkPath,
 }) {
-  const sidebarLinks = items.map(({ id, name }) => ({
+  const sidebarLinks = items.map(({ id, displayName }) => ({
     id,
-    name,
+    displayName,
   }));
 
   return (
@@ -38,9 +38,9 @@ export default function SectionCover({
     >
       <div className="section-grid-wrapper">
         <div className="section-grid">
-          {items.map(({ id, name }) => (
+          {items.map(({ id, displayName }) => (
             <Link key={id} to={getLinkPath(id)} className="section-card">
-              {name}
+              {displayName}
             </Link>
           ))}
         </div>

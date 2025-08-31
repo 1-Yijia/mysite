@@ -30,3 +30,13 @@ export const chapterMap = {
   7: DuanlianChapter7,
   8: DuanlianChapter8,
 };
+
+/**
+ * Map chapters for SectionCover / SectionPage
+ * @returns array of { id, displayName }
+ */
+export const getChapterLinks = () =>
+  chapterTitles.map(({ number, title }) => ({
+    id: number,
+    displayName: title,
+  }));

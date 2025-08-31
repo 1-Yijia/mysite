@@ -1,25 +1,30 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import HeroCarousel from "../components/HeroCarousel";
-// import "../components/HeroCarousel.css";
+import { useLang } from "../components/ToggleLang"; // your global hook
+import { navLinks } from "../constants/NavLinks";
 import "./Home.css";
 import "../styles/HeroCarousel.css";
 
 function Home() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  const { lang } = useLang();
 
-    return (
-        <div className="home-container">
-            <div className="hero-container">
-                <HeroCarousel />
-                <div className="catalog-bar">
-                    <button onClick={() => navigate("/stories")}>故事</button>
-                    <button onClick={() => navigate("/journeys")}>旅程</button>
-                    <button onClick={() => navigate("/about")}>关于</button>
-                </div>
-            </div>
+  return (
+    <div className="home-container">
+      <div className="hero-container">
+        <HeroCarousel />
+        <div className="catalog-bar">
+          {/* map through navLinks for relevant buttons */}
+          {[navLinks.stories, navLinks.journeys, navLinks.about].map((link) => (
+            <button key={link.path} onClick={() => navigate(link.path)}>
+              {link[lang]}
+            </button>
+          ))}
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default Home;

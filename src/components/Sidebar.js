@@ -45,13 +45,13 @@ export default function Sidebar({
 
       {shouldShowList && (
         <ul className="chapter-sidebar-list">
-          {links.map(({ id, name }) => (
+          {links.map(({ id, displayName }) => (
             <li
               key={id}
               className={currentId === String(id) ? "active" : ""}
             >
               <Link to={`${basePath}/${id}`} onClick={handleLinkClick}>
-                {name}
+                {displayName}
               </Link>
             </li>
           ))}

@@ -9,10 +9,12 @@ import JourneyCover from "./pages/journeys/JourneyCover";
 import JourneySectionPage from "./pages/journeys/JourneySectionPage";
 import ChapterSectionPage from "./pages/Stories/Survivalist/ChapterSectionPage";
 import ArchitectureProjectPage from "./pages/about/about_content/architecture/ArchitecturePage";
+import { ToggleLangProvider } from "./components/ToggleLang";
 import './App.css';
 
 function App() {
   return (
+    <ToggleLangProvider>
     <Routes>
       {/* Layout wraps all routes */}
       <Route path="/" element={<Layout />}>
@@ -29,6 +31,7 @@ function App() {
         <Route path="stories/Survivalist/:chapterId" element={<ChapterSectionPage />} />
       </Route>
     </Routes>
+    </ToggleLangProvider>
   );
 }
 

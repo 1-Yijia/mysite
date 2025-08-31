@@ -1,13 +1,10 @@
 import React from "react";
 import SectionPage from "../../../components/SectionPage";
-import { chapterMap, chapterTitles } from "./ChapterConfig";
+import { chapterMap, getChapterLinks } from "./ChapterConfig";
 
-const links = chapterTitles.map(({ number, title }) => ({
-  id: number,
-  name: title,
-}));
 
 export default function ChapterSectionPage() {
+  const links = getChapterLinks();
   return (
     <SectionPage
       componentMap={chapterMap}
