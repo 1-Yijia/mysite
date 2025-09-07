@@ -1,4 +1,5 @@
 import React from "react";
+import { useLang } from "../../../../components/ToggleLang";
 
 export default function Project_1() {
     return (

@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { architectureList } from "./architecture/ArchitecturePage";
+import { getArchitectureList } from "./architecture/ArchitecturePage";
 import "../../../styles/ModelPhoto.css";
+import { useLang } from "../../../components/ToggleLang";
 
 export default function ModelPhoto() {
+  const { lang } = useLang();
+  const architectureList = getArchitectureList(lang);
+
   return (
     <div className="model-photo-container">
       {architectureList.map((project) => (
@@ -12,8 +16,8 @@ export default function ModelPhoto() {
           to={`/about/about_content/architecture/${project.id}`}
           className="model-photo-item"
         >
-          <img src={project.image} alt={project.title} />
-          <div className="model-photo-title">{project.title}</div>
+          <img src={project.image} alt={project.displayName} />
+          <div className="model-photo-title">{project.displayName}</div>
         </Link>
       ))}
     </div>

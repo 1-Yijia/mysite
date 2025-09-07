@@ -6,7 +6,7 @@ import { ToggleLangButton } from "./ToggleLang";
 function Footer() {
   return (
     <footer className="footer-bar">
-      <span>Connect with me</span>
+      <span className="footer-label">Connect with me</span>
       <a href="https://www.linkedin.com/in/yijiayuan93/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin size={20} />
       </a>

@@ -6,37 +6,38 @@ import Project_4 from './Project4';
 import Project_5 from './Project5';
 import Project_6 from './Project6';
 import SectionPage from "../../../../components/SectionPage";
+import { useLang } from "../../../../components/ToggleLang";
 
 
-export const architectureList = [
+export const getArchitectureList = (lang = "en") => [
   {
     id: "project1",
-    title: "光影",
+    displayName: lang === "en" ? "Light & Shadow" : "光影",
     image: "/images/Thumbnail_1.jpg",
   },
   {
     id: "project2",
-    title: "繁复",
+    displayName: lang === "en" ? "Labyrinth" : "繁复",
     image: "/images/Thumbnail_2.jpg",
   },
   {
     id: "project3",
-    title: "挣脱",
+    displayName: lang === "en" ? "Break Free" : "挣脱",
     image: "/images/Thumbnail_3.jpg",
   },
   {
     id: "project4",
-    title: "古典",
+    displayName: lang === "en" ? "Classical" : "古典",
     image: "/images/Thumbnail_4.jpg",
   },
   {
     id: "project5",
-    title: "轻盈",
+    displayName: lang === "en" ? "Weightless" : "轻盈",
     image: "/images/Thumbnail_5.jpg",
   },
-    {
+  {
     id: "project6",
-    title: "解构",
+    displayName: lang === "en" ? "Deconstructivism" : "解构",
     image: "/images/Thumbnail_6.jpg",
   },
 ];
@@ -52,12 +53,14 @@ export const architectureMap = {
 };
 
 export default function ArchitectureProjectPage() {
+  const { lang } = useLang();
+  const architectureList = getArchitectureList(lang);
   return (
     <SectionPage
       componentMap={architectureMap}
       linkList={architectureList}
       basePath="/about/about_content/architecture"
-      sidebarTitle="模型照片"
+      sidebarTitle={lang === "en" ? "Architecture Projects" : "过往项目"}
       fallbackMessage="项目不存在"
       idParam="id" // default param name, can omit
     />

@@ -17,3 +17,9 @@
 .footer-bar a:hover {
   color: #ccc;
 }
+
+@media (max-width: 768px) {
+  .footer-bar .footer-label {
+    display: none;
+  }
+}
