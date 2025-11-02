@@ -17,6 +17,14 @@ export default function Munich_Paris_2015() {
                 <figcaption> </figcaption>
             </figure>
             <figure>
+                <img src="/images/journeys/2015_munich_Konigsee.jpg" />
+                <figcaption>Königssee</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/journeys/2015_munich_Konigsee2.jpg" />
+                <figcaption></figcaption>
+            </figure>
+            <figure>
                 <img src="/images/journeys/2015_Notre_Dame.jpg" />
                 <figcaption>Before Notre Dame burnt down</figcaption>
             </figure>

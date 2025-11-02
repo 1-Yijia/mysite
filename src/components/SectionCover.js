@@ -12,12 +12,14 @@ import "../styles/SectionCover.css";
  * @param {Array} props.items - array of { id, displayName }
  * @param {string} props.basePath - base path for sidebar link highlighting
  * @param {function} props.getLinkPath - function to generate link from item
+ * @param {string} props.comingSoonMessage - optional message for unclickable "coming soon" card
  */
 export default function SectionCover({
   sidebarTitle = "",
   items,
   basePath,
   getLinkPath,
+  comingSoonMessage = null,
 }) {
   const sidebarLinks = items.map(({ id, displayName }) => ({
     id,
@@ -43,6 +45,11 @@ export default function SectionCover({
               {displayName}
             </Link>
           ))}
+          {comingSoonMessage && (
+            <div className="section-card coming-soon-card">
+              {comingSoonMessage}
+            </div>
+          )}
         </div>
       </div>
     </SharedSectionLayout>

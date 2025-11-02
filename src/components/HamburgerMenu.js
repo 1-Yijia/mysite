@@ -1,10 +1,13 @@
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
+import { useLang } from "./ToggleLang";
+import { navLinks } from "../constants/NavLinks";
 import "../styles/HamburgerMenu.css";
 
 export default function HamburgerMenu({ isOpen, setIsOpen }) {
   const navigate = useNavigate();
+  const { lang } = useLang();
 
   const handleNavigate = (path) => {
     navigate(path);
@@ -28,9 +31,15 @@ export default function HamburgerMenu({ isOpen, setIsOpen }) {
 
       {isOpen && (
         <div className="dropdown-menu">
-          <button onClick={() => handleNavigate("/stories")}>故事</button>
-          <button onClick={() => handleNavigate("/about")}>关于</button>
-          <button onClick={() => handleNavigate("/journeys")}>旅程</button>
+          <button onClick={() => handleNavigate(navLinks.stories.path)}>
+            {navLinks.stories[lang]}
+          </button>
+          <button onClick={() => handleNavigate(navLinks.about.path)}>
+            {navLinks.about[lang]}
+          </button>
+          <button onClick={() => handleNavigate(navLinks.journeys.path)}>
+            {navLinks.journeys[lang]}
+          </button>
         </div>
       )}
     </div>
