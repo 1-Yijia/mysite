@@ -21,6 +21,7 @@
 }
 
 .section-card {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,6 +41,33 @@
 .section-card:hover {
   background-color: #000;
   color: #fff;
+}
+
+.card-title,
+.card-desc {
+  position: absolute;
+  inset: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.card-title {
+  opacity: 1;
+}
+
+.card-desc {
+  opacity: 0;
+  font-size: 0.8rem;
+}
+
+.section-card:hover .card-title {
+  opacity: 0;
+}
+
+.section-card:hover .card-desc {
+  opacity: 1;
 }
 
 .coming-soon-card {

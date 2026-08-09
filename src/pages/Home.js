@@ -16,7 +16,7 @@ function Home() {
         <HeroCarousel />
         <div className="catalog-bar">
           {/* map through navLinks for relevant buttons */}
-          {[navLinks.stories, navLinks.journeys, navLinks.about].map((link) => (
+          {[navLinks.stories, navLinks.journeys, navLinks.about, navLinks.applications].map((link) => (
             <button key={link.path} onClick={() => navigate(link.path)}>
               {link[lang]}
             </button>

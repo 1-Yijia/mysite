@@ -7,6 +7,7 @@ import AboutCover from "./pages/about/AboutCover";
 import AboutSectionPage from "./pages/about/AboutSectionPage";
 import JourneyCover from "./pages/journeys/JourneyCover";
 import JourneySectionPage from "./pages/journeys/JourneySectionPage";
+import ApplicationsCover from "./pages/applications/ApplicationsCover";
 import ChapterSectionPage from "./pages/Stories/Survivalist/ChapterSectionPage";
 import ArchitectureProjectPage from "./pages/about/about_content/architecture/ArchitecturePage";
 import { ToggleLangProvider } from "./components/ToggleLang";
@@ -29,6 +30,7 @@ function App() {
         <Route path="journeys/:journeyId" element={<JourneySectionPage />} />
         <Route path="stories" element={<StoryCover />} />
         <Route path="stories/Survivalist/:chapterId" element={<ChapterSectionPage />} />
+        <Route path="applications" element={<ApplicationsCover />} />
       </Route>
     </Routes>
     </ToggleLangProvider>

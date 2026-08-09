@@ -4,4 +4,5 @@ export const navLinks = {
   about: { en: "About", cn: "关于", path: "/about" },
   journeys: { en: "Journeys", cn: "旅程", path: "/journeys" },
   stories: { en: "Stories", cn: "故事", path: "/stories" },
+  applications: { en: "Applications", cn: "应用", path: "/applications" },
 };

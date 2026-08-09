@@ -40,6 +40,9 @@ export default function HamburgerMenu({ isOpen, setIsOpen }) {
           <button onClick={() => handleNavigate(navLinks.journeys.path)}>
             {navLinks.journeys[lang]}
           </button>
+          <button onClick={() => handleNavigate(navLinks.applications.path)}>
+            {navLinks.applications[lang]}
+          </button>
         </div>
       )}
     </div>

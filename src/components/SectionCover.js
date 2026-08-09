@@ -40,11 +40,32 @@ export default function SectionCover({
     >
       <div className="section-grid-wrapper">
         <div className="section-grid">
-          {items.map(({ id, displayName }) => (
-            <Link key={id} to={getLinkPath(id)} className="section-card">
-              {displayName}
-            </Link>
-          ))}
+          {items.map(({ id, displayName, description, externalUrl }) => {
+            const content = description ? (
+              <>
+                <span className="card-title">{displayName}</span>
+                <span className="card-desc">{description}</span>
+              </>
+            ) : (
+              displayName
+            );
+
+            return externalUrl ? (
+              <a
+                key={id}
+                href={externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="section-card"
+              >
+                {content}
+              </a>
+            ) : (
+              <Link key={id} to={getLinkPath(id)} className="section-card">
+                {content}
+              </Link>
+            );
+          })}
           {comingSoonMessage && (
             <div className="section-card coming-soon-card">
               {comingSoonMessage}
