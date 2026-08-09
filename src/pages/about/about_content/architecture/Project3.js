@@ -7,7 +7,7 @@ export default function Project_3() {
             <p>现在回头看，当时很多的概念都是挣脱，松绑，break free的概念</p>
             <p>很多东西表面上可以压抑，但还是会从潜意识里透露出来</p>
             <figure >
-                <img src="/images/AR_3_1.jpg" />
+                <img src="/images/AR_3_1.jpg" alt="Conceptual Sketch" />
                 <figcaption>Conceptual Sketch</figcaption>
             </figure>
             <p>这个项目只拿了B,当时太过追求成绩，恐惧GPA降低而被取消奖学金而忘记了追求建筑本身的快乐</p>
@@ -17,25 +17,25 @@ export default function Project_3() {
             <p>Nobody knows shit. And don't let anyone tell you otherwise</p>
             <p>坚持走自己认为对的路便好</p>
             <figure >
-                <img src="/images/AR_3_2.jpg" />
+                <img src="/images/AR_3_2.jpg" alt="建筑模型照片一" />
                 <figcaption>建筑模型照片一</figcaption>
             </figure>
 
             <figure >
-                <img src="/images/AR_3_3.jpg" />
+                <img src="/images/AR_3_3.jpg" alt="建筑模型照片二" />
                 <figcaption>建筑模型照片二</figcaption>
             </figure>
 
             <figure >
-                <img src="/images/AR_3_4.jpg" />
+                <img src="/images/AR_3_4.jpg" alt="建筑模型照片三" />
                 <figcaption>建筑模型照片三</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_3_5.jpg" />
+                <img src="/images/AR_3_5.jpg" alt="建筑模型照片四" />
                 <figcaption>建筑模型照片四</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_3_6.jpg" />
+                <img src="/images/AR_3_6.jpg" alt="Exploded Axonometric" />
                 <figcaption>Exploded Axonometric</figcaption>
             </figure>
             <p></p>

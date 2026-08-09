@@ -15,47 +15,47 @@ export default function Project_6() {
             <p>不过这个毕业设计已是彼时我能为自己五年建筑学习生涯交出的最完美的答卷</p>
             <p>I couldn't't ask for more and I couldn't given more.</p>
             <figure >
-                <img src="/images/AR_6_1.jpg" />
+                <img src="/images/AR_6_1.jpg" alt="项目立意" />
                 <figcaption>项目立意</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_2.jpg" />
+                <img src="/images/AR_6_2.jpg" alt="diagram" />
                 <figcaption>diagram</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_3.jpg" />
+                <img src="/images/AR_6_3.jpg" alt="Plan" />
                 <figcaption>Plan</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_4.jpg" />
+                <img src="/images/AR_6_4.jpg" alt="Render" />
                 <figcaption>Render</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_5.jpg" />
+                <img src="/images/AR_6_5.jpg" alt="Axonometric" />
                 <figcaption>Axonometric</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_6.jpg" />
+                <img src="/images/AR_6_6.jpg" alt="Section" />
                 <figcaption>Section</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_7.jpg" />
+                <img src="/images/AR_6_7.jpg" alt="Exploded Axonometric" />
                 <figcaption>Exploded Axonometric</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_8.jpg" />
+                <img src="/images/AR_6_8.jpg" alt="模型照片一" />
                 <figcaption>模型照片一</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_9.jpg" />
+                <img src="/images/AR_6_9.jpg" alt="模型照片二" />
                 <figcaption>模型照片二</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_10.jpg" />
+                <img src="/images/AR_6_10.jpg" alt="模型照片三" />
                 <figcaption>模型照片三</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_6_11.jpg" />
+                <img src="/images/AR_6_11.jpg" alt="Site Model" />
                 <figcaption>Site Model Photo</figcaption>
             </figure>
             <p></p>

@@ -6,33 +6,33 @@ export default function Project_2() {
             <h2>繁复</h2>
             <p>一开始只是一味的追求形态的复杂，精致，概念化</p>
             <figure >
-                <img src="/images/AR_2_2.jpg" />
+                <img src="/images/AR_2_2.jpg" alt="概念模型照片二" />
                 <figcaption>概念模型照片二</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_2_3.jpg" />
+                <img src="/images/AR_2_3.jpg" alt="概念模型照片三" />
                 <figcaption>概念模型照片三</figcaption>
             </figure>
             <p>从概念落到空间，就无所适从。很多概念上空灵细致的表达在落地时遗失了。</p>
             <figure >
-                <img src="/images/AR_2_4.jpg" />
+                <img src="/images/AR_2_4.jpg" alt="建筑模型照片一" />
                 <figcaption>建筑模型照片一</figcaption>
             </figure>
 
             <figure >
-                <img src="/images/AR_2_5.jpg" />
+                <img src="/images/AR_2_5.jpg" alt="建筑模型照片二" />
                 <figcaption>建筑模型照片二</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_2_6.jpg" />
+                <img src="/images/AR_2_6.jpg" alt="建筑模型照片三" />
                 <figcaption>建筑模型照片三</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_2_7.jpg" />
+                <img src="/images/AR_2_7.jpg" alt="PSE" />
                 <figcaption>PSE</figcaption>
             </figure>
             <figure >
-                <img src="/images/AR_2_8.jpg" />
+                <img src="/images/AR_2_8.jpg" alt="Exploded Axonometric" />
                 <figcaption>Exploded Axonometric</figcaption>
             </figure>
             <p></p>
