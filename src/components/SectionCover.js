@@ -16,10 +16,12 @@ import "../styles/SectionCover.css";
  */
 export default function SectionCover({
   sidebarTitle = "",
+  sectionLabel = "Section",
   items,
   basePath,
   getLinkPath,
   comingSoonMessage = null,
+  showIndex = true,
 }) {
   const sidebarLinks = items.map(({ id, displayName }) => ({
     id,
@@ -32,6 +34,7 @@ export default function SectionCover({
         <Sidebar
           variant="minimal"
           title={sidebarTitle}
+          sectionLabel={sectionLabel}
           links={sidebarLinks}
           currentId={null}
           basePath={basePath}
@@ -40,14 +43,18 @@ export default function SectionCover({
     >
       <div className="section-grid-wrapper">
         <div className="section-grid">
-          {items.map(({ id, displayName, description, externalUrl }) => {
+          {items.map(({ id, displayName, description, externalUrl }, index) => {
+            const idxNum = showIndex ? (
+              <span className="idx-num">{String(index + 1).padStart(2, "0")}</span>
+            ) : null;
+            const label = <span className="card-label">{idxNum}{displayName}</span>;
             const content = description ? (
               <>
-                <span className="card-title">{displayName}</span>
+                <span className="card-title">{label}</span>
                 <span className="card-desc">{description}</span>
               </>
             ) : (
-              displayName
+              label
             );
 
             return externalUrl ? (

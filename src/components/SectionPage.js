@@ -20,6 +20,7 @@ export default function SectionPage({
   linkList,
   basePath,
   sidebarTitle = "",
+  sectionLabel = "Section",
   idParam = "id",
   fallbackMessage = "内容不存在",
 }) {
@@ -36,6 +37,7 @@ export default function SectionPage({
       sidebar={
         <Sidebar
           title={sidebarTitle}
+          sectionLabel={sectionLabel}
           variant="full"
           links={linkList}
           currentId={id}

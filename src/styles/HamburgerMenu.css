@@ -41,28 +41,48 @@
 
 .dropdown-menu {
     position: absolute;
+    top: 100%;
+    left: 0;
     display: flex;
     flex-direction: column;
-    background: none;
-    border: none;
-    padding: 0;
-    box-shadow: none;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    border-radius: 6px;
+    padding: 16px;
+    min-width: 180px;
+    z-index: 1000;
 }
 
 .dropdown-menu button {
     background: none;
     border: none;
-    font-size: 1rem;
+    font: 14px sans-serif;
     color: black;
     cursor: pointer;
     text-align: left;
-    padding: 0.3rem 0;
+    padding: 8px 0;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
     transition: color 0.2s;
 }
 
 .dropdown-menu button:hover {
     color: #888;
     /* subtle hover effect */
+}
+
+.dropdown-menu .idx-num {
+    font: 11px ui-monospace, Menlo, monospace;
+    color: #bbb;
+}
+
+.hamburger-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .15);
+    z-index: 999;
 }
 
 /* ✅ Mobile-only tweaks */

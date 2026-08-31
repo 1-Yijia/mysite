@@ -12,6 +12,7 @@ export default function JourneyCover() {
 
   return (
     <SectionCover
+      sidebarTitle={lang === "en" ? "Journeys" : "旅程"}
       items={journeys}
       basePath="/journeys"
       getLinkPath={(id) => `/journeys/${id}`}

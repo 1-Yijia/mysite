@@ -57,6 +57,12 @@
   opacity: 1;
 }
 
+.section-card .idx-num {
+  font: 11px ui-monospace, Menlo, monospace;
+  color: #aaa;
+  margin-right: 8px;
+}
+
 .card-desc {
   opacity: 0;
   font-size: 0.8rem;
@@ -86,17 +92,17 @@
 @media (max-width: 768px) {
   .section-grid-wrapper {
     padding: 0;
-    margin-top: 3rem;
+    margin-top: 0.25rem;
   }
 
   .section-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem 0.5rem;
+    gap: 1.25rem 0.75rem;
   }
 
   .section-card {
     width: 100%;
-    height: auto;
+    height: 130px;
     font-size: 0.85rem;
     padding: 0.8rem;
   }

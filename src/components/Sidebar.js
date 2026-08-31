@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import "../styles/Sidebar.css";
 
 
-export default function Sidebar({ 
+export default function Sidebar({
   variant = "full",
   title = "",
+  sectionLabel = "Section",
   links = [],
   currentId = null,
   basePath = "",
@@ -41,15 +42,20 @@ export default function Sidebar({
       className={`chapter-sidebar ${variant} ${isHamburgerOpen ? "collapsed" : ""
         } ${isMobileDropdownOpen ? "mobile-expanded" : "mobile-collapsed"}`}
     >
-      <h3 onClick={handleTitleClick} className="chapter-sidebar-title">{title}</h3>
+      <div onClick={handleTitleClick} className="chapter-sidebar-header">
+        <div className="chapter-sidebar-label">{sectionLabel}</div>
+        <h3 className="chapter-sidebar-title">{title}</h3>
+        <div className="chapter-sidebar-tick"></div>
+      </div>
 
       {shouldShowList && (
         <ul className="chapter-sidebar-list">
-          {links.map(({ id, displayName }) => (
+          {links.map(({ id, displayName }, index) => (
             <li
               key={id}
               className={currentId === String(id) ? "active" : ""}
             >
+              <span className="idx-num">{String(index + 1).padStart(2, "0")}</span>
               <Link to={`${basePath}/${id}`} onClick={handleLinkClick}>
                 {displayName}
               </Link>

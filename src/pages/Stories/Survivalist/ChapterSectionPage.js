@@ -13,6 +13,7 @@ export default function ChapterSectionPage() {
       linkList={links}
       basePath="/stories/Survivalist"
       sidebarTitle={lang === "en" ? "Survivialist" : "以生为证"}
+      sectionLabel={lang === "en" ? "Stories" : "故事"}
       idParam="chapterId"
       fallbackMessage="章节不存在"
     />

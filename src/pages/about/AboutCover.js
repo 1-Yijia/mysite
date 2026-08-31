@@ -10,6 +10,7 @@ export default function AboutCover() {
 
   return (
     <SectionCover
+      sidebarTitle={lang === "en" ? "About" : "关于"}
       items={itemsWithLabel}
       basePath="/about"
       getLinkPath={(id) => `/about/${id}`}

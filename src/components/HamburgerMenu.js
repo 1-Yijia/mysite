@@ -30,20 +30,23 @@ export default function HamburgerMenu({ isOpen, setIsOpen }) {
       </div>
 
       {isOpen && (
-        <div className="dropdown-menu">
-          <button onClick={() => handleNavigate(navLinks.stories.path)}>
-            {navLinks.stories[lang]}
-          </button>
-          <button onClick={() => handleNavigate(navLinks.about.path)}>
-            {navLinks.about[lang]}
-          </button>
-          <button onClick={() => handleNavigate(navLinks.journeys.path)}>
-            {navLinks.journeys[lang]}
-          </button>
-          <button onClick={() => handleNavigate(navLinks.applications.path)}>
-            {navLinks.applications[lang]}
-          </button>
-        </div>
+        <>
+          <div className="hamburger-backdrop" onClick={() => setIsOpen(false)} />
+          <div className="dropdown-menu">
+            <button onClick={() => handleNavigate(navLinks.stories.path)}>
+              <span className="idx-num">01</span>{navLinks.stories[lang]}
+            </button>
+            <button onClick={() => handleNavigate(navLinks.about.path)}>
+              <span className="idx-num">02</span>{navLinks.about[lang]}
+            </button>
+            <button onClick={() => handleNavigate(navLinks.journeys.path)}>
+              <span className="idx-num">03</span>{navLinks.journeys[lang]}
+            </button>
+            <button onClick={() => handleNavigate(navLinks.applications.path)}>
+              <span className="idx-num">04</span>{navLinks.applications[lang]}
+            </button>
+          </div>
+        </>
       )}
     </div>
   );

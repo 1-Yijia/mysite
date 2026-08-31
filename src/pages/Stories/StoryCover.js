@@ -13,6 +13,8 @@ export default function StoryCover() {
   return (
     <SectionCover
       sidebarTitle={lang === "en" ? "Survivialist" : "以生为证"}
+      sectionLabel={lang === "en" ? "Stories" : "故事"}
+      showIndex={false}
       items={items}
       basePath="/stories/Survivalist"
       getLinkPath={(id) => `/stories/Survivalist/${id}`}

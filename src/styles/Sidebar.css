@@ -29,11 +29,31 @@
   overflow-y: auto;
 }
 
-.chapter-sidebar-title {
-  font-size: 1.2rem;
-  font-weight: 600;
+.chapter-sidebar-header {
   cursor: pointer;
   user-select: none;
+}
+
+.chapter-sidebar-label {
+  font-size: 10px;
+  letter-spacing: .15em;
+  color: #999;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.chapter-sidebar-title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.chapter-sidebar-tick {
+  width: 28px;
+  height: 2px;
+  background: #111;
+  margin-bottom: 24px;
 }
 
 .chapter-sidebar-list {
@@ -55,16 +75,36 @@
 
 .chapter-sidebar li {
   margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
 }
 
-.chapter-sidebar a {
+.chapter-sidebar li a {
+  font-size: 14px;
+  color: #888;
   text-decoration: none;
-  color: #555;
   transition: color 0.2s ease;
 }
 
-.chapter-sidebar a:hover {
-  color: #000;
+.chapter-sidebar li a:hover {
+  color: #111;
+}
+
+.chapter-sidebar li.active a {
+  color: #111;
+  font-weight: 600;
+  border-bottom: 1.5px solid #111;
+  padding-bottom: 2px;
+}
+
+.chapter-sidebar .idx-num {
+  font: 11px ui-monospace, Menlo, monospace;
+  color: #bbb;
+  margin-right: 10px;
+}
+
+.chapter-sidebar li.active .idx-num {
+  color: #111;
 }
 
 /* ✅ Mobile adjustments */
@@ -98,12 +138,9 @@
     transition: opacity 0.3s ease;
   }
 
-  .chapter-sidebar.mobile-collapsed .chapter-sidebar-list {
-    display: none;
-  }
-
-  .chapter-sidebar.mobile-expanded .chapter-sidebar-list {
-    display: block;
+  .chapter-sidebar-list {
+    height: auto;
+    overflow-y: visible;
   }
 
   .chapter-sidebar-title {
@@ -111,7 +148,7 @@
   text-align: left;
   margin-bottom: 0.75rem;
   padding-left: 0;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.05em;
   color: #111;
 }
@@ -126,5 +163,29 @@
 
   .chapter-sidebar li {
     margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 0;
+  }
+
+  .chapter-sidebar li a {
+    padding: 6px 12px;
+    display: inline-flex;
+    gap: 6px;
+    font-size: 12px;
+    border-bottom: none !important;
+  }
+
+  .chapter-sidebar li.active {
+    background: #111;
+    border-color: #111;
+  }
+
+  .chapter-sidebar li.active a {
+    color: #fff !important;
+  }
+
+  .chapter-sidebar li.active .idx-num {
+    color: #fff;
   }
 }
