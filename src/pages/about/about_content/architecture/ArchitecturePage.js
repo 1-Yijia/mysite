@@ -1,12 +1,9 @@
-import React from "react";
 import Project_1 from './Project1';
 import Project_2 from './Project2';
 import Project_3 from './Project3';
 import Project_4 from './Project4';
 import Project_5 from './Project5';
 import Project_6 from './Project6';
-import SectionPage from "../../../../components/SectionPage";
-import { useLang } from "../../../../components/ToggleLang";
 
 
 export const getArchitectureList = (lang = "en") => [
@@ -42,7 +39,6 @@ export const getArchitectureList = (lang = "en") => [
   },
 ];
 
-// ✅ Optional: if needed later to map id → component
 export const architectureMap = {
   project1: Project_1,
   project2: Project_2,
@@ -51,18 +47,3 @@ export const architectureMap = {
   project5: Project_5,
   project6: Project_6,
 };
-
-export default function ArchitectureProjectPage() {
-  const { lang } = useLang();
-  const architectureList = getArchitectureList(lang);
-  return (
-    <SectionPage
-      componentMap={architectureMap}
-      linkList={architectureList}
-      basePath="/about/about_content/architecture"
-      sidebarTitle={lang === "en" ? "Architecture Projects" : "过往项目"}
-      fallbackMessage="项目不存在"
-      idParam="id" // default param name, can omit
-    />
-  );
-}

@@ -17,6 +17,7 @@ export default function JourneyCover() {
       basePath="/journeys"
       getLinkPath={(id) => `/journeys/${id}`}
       comingSoonMessage={comingSoonMessage}
+      gallery
     />
   );
 }

@@ -12,10 +12,12 @@ export default function ApplicationsCover() {
 
   return (
     <SectionCover
-      sidebarTitle={lang === "en" ? "Applications" : "应用"}
+      sidebarTitle={lang === "en" ? "Projects" : "项目"}
       items={itemsWithLabel}
       basePath="/applications"
+      getLinkPath={(id) => `/applications/${id}`}
       comingSoonMessage={comingSoonMessage}
+      gallery
     />
   );
 }

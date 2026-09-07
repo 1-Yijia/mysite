@@ -39,7 +39,7 @@ export default function HeroCarousel() {
     <div className="hero-carousel">
       {imageData.map(({ src, id }, index) => (
         <Link
-          to={`/about/about_content/architecture/${id}`}
+          to={`/applications/${id}`}
           key={index}
           className={`carousel-slide ${index === currentIndex ? "active" : ""}`}
         >

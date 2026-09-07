@@ -45,12 +45,22 @@
   margin-bottom: 0.5rem;
 }
 
-.section-content img {
+.section-content img,
+.section-content video {
   width: 70%;
   max-width: 600px;
   height: auto;
   display: block;
   border-radius: 8px;
+}
+
+.section-content ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.section-content li {
+  margin-bottom: 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -70,7 +80,8 @@
     margin-bottom: 1.2rem;
   }
 
-  .section-content img {
+  .section-content img,
+  .section-content video {
     width: 100%;
   }
 

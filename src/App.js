@@ -8,8 +8,8 @@ import AboutSectionPage from "./pages/about/AboutSectionPage";
 import JourneyCover from "./pages/journeys/JourneyCover";
 import JourneySectionPage from "./pages/journeys/JourneySectionPage";
 import ApplicationsCover from "./pages/applications/ApplicationsCover";
+import ApplicationsSectionPage from "./pages/applications/ApplicationsSectionPage";
 import ChapterSectionPage from "./pages/Stories/Survivalist/ChapterSectionPage";
-import ArchitectureProjectPage from "./pages/about/about_content/architecture/ArchitecturePage";
 import { ToggleLangProvider } from "./components/ToggleLang";
 import './App.css';
 
@@ -22,15 +22,12 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/about" element={<AboutCover />} />
         <Route path="/about/:sectionId" element={<AboutSectionPage />} />
-        <Route
-          path="/about/about_content/architecture/:id"
-          element={<ArchitectureProjectPage />}
-        />
         <Route path="journeys" element={<JourneyCover />} />
         <Route path="journeys/:journeyId" element={<JourneySectionPage />} />
         <Route path="stories" element={<StoryCover />} />
         <Route path="stories/Survivalist/:chapterId" element={<ChapterSectionPage />} />
         <Route path="applications" element={<ApplicationsCover />} />
+        <Route path="applications/:sectionId" element={<ApplicationsSectionPage />} />
       </Route>
     </Routes>
     </ToggleLangProvider>
