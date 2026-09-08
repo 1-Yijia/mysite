@@ -8,13 +8,13 @@ import Scotland_2024 from './journey_content/2024_Scotland';
 
 
 export const journeyList = [
-  { id: "europe", name: { en: "2014 Europe", cn: "2014 西欧" }, image: "/images/journeys/2014_亚琛2.jpg" },
-  { id: "bali", name: { en: "2014 Bali", cn: "2014 巴厘岛" }, image: "/images/journeys/2014_Bali4.jpg" },
-  { id: "Munich_Paris", name: { en: "2015 Munich+Paris", cn: "2015 慕尼黑 + 巴黎" }, image: "/images/journeys/2015_NeuShwansteinCastle.jpg" },
-  { id: "Spain", name: { en: "2015 Spain", cn: "2015 西班牙" }, image: "/images/journeys/2015_Mies.jpg" },
-  { id: "Italy", name: { en: "2015 Italy", cn: "2015 意大利" }, image: "/images/journeys/2015_Rome4.jpg" },
-  { id: "australia", name: { en: "2023 Australia", cn: "2023 澳大利亚" }, image: "/images/journeys/australia_2.jpg" },
-  { id: "scotland", name: { en: "2024 Scotland", cn: "2024 苏格兰" }, image: "/images/journeys/scotland_1.jpg" },
+  { id: "europe", name: { en: "2014 Europe", cn: "2014 西欧" }, image: "/images/journeys/thumbs/2014_亚琛2.jpg" },
+  { id: "bali", name: { en: "2014 Bali", cn: "2014 巴厘岛" }, image: "/images/journeys/thumbs/2014_Bali4.jpg" },
+  { id: "Munich_Paris", name: { en: "2015 Munich+Paris", cn: "2015 慕尼黑 + 巴黎" }, image: "/images/journeys/thumbs/2015_NeuShwansteinCastle.jpg" },
+  { id: "Spain", name: { en: "2015 Spain", cn: "2015 西班牙" }, image: "/images/journeys/thumbs/2015_Mies.jpg" },
+  { id: "Italy", name: { en: "2015 Italy", cn: "2015 意大利" }, image: "/images/journeys/thumbs/2015_Rome4.jpg" },
+  { id: "australia", name: { en: "2023 Australia", cn: "2023 澳大利亚" }, image: "/images/journeys/thumbs/australia_2.jpg" },
+  { id: "scotland", name: { en: "2024 Scotland", cn: "2024 苏格兰" }, image: "/images/journeys/thumbs/scotland_1.jpg" },
 ];
 
 
